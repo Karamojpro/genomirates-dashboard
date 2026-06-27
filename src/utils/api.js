@@ -1,4 +1,4 @@
-const BASE_URL = 'https://genomirates-v5-1-1.onrender.com'
+const API_BASE_URL = 'https://bug-free-space-enigma-v6xvv67g4wjp2pqp9-8000.app.github.dev'
 
 async function request(path, options = {}) {
   const url = `${BASE_URL}${path}`
