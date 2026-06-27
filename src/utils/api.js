@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://bug-free-space-enigma-v6xvv67g4wjp2pqp9-8000.app.github.dev'
+const BASE_URL = 'https://bug-free-space-enigma-v6xvv67g4wjp2pqp9-8000.app.github.dev'
 
 async function request(path, options = {}) {
   const url = `${BASE_URL}${path}`
