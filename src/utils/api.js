@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://bug-free-space-enigma-v6xvv67g4wjp2pqp9-8000.app.github.dev'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 async function request(path, options = {}) {
   const url = `${API_BASE_URL}${path}`
