@@ -1,7 +1,7 @@
 const API_BASE_URL = 'https://bug-free-space-enigma-v6xvv67g4wjp2pqp9-8000.app.github.dev'
 
 async function request(path, options = {}) {
-  const url = `${BASE_URL}${path}`
+  const url = `${API_BASE_URL}${path}`
   const res = await fetch(url, {
     headers: { 'Content-Type': 'application/json', ...options.headers },
     ...options,
@@ -19,7 +19,7 @@ async function request(path, options = {}) {
 
 // VCF Analysis
 export async function analyzeVCF(formData) {
-  const res = await fetch(`${BASE_URL}/vcf/analyze`, {
+  const res = await fetch(`${API_BASE_URL}/vcf/analyze`, {
     method: 'POST',
     body: formData,
   })
